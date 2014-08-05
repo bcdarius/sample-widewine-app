@@ -1,0 +1,2 @@
+PODS_WIDEVINE_IOS_LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/Widevine-iOS"
+PODS_WIDEVINE_IOS_OTHER_LDFLAGS = -lSystem -lWViPhoneAPI -lc++ -lresolv -lxml2 -lz

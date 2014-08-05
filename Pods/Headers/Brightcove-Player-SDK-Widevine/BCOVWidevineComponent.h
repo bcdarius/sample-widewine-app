@@ -1,0 +1,1 @@
+../../Brightcove-Player-SDK-Widevine/Headers/BCOVWidevineComponent.h

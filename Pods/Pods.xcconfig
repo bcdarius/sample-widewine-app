@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/Brightcove-Player-SDK" "${PODS_ROOT}/Headers/Brightcove-Player-SDK-Widevine" "${PODS_ROOT}/Headers/ReactiveCocoa" "${PODS_ROOT}/Headers/ReactiveCocoa/ReactiveCocoa" "${PODS_ROOT}/Headers/Widevine-iOS"
+LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/Brightcove-Player-SDK/Library" "$(PODS_ROOT)/Brightcove-Player-SDK-Widevine/Library" "$(PODS_ROOT)/Widevine-iOS"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/Brightcove-Player-SDK" -isystem "${PODS_ROOT}/Headers/Brightcove-Player-SDK-Widevine" -isystem "${PODS_ROOT}/Headers/ReactiveCocoa" -isystem "${PODS_ROOT}/Headers/ReactiveCocoa/ReactiveCocoa" -isystem "${PODS_ROOT}/Headers/Widevine-iOS"
+OTHER_LDFLAGS = -ObjC -lBCOVPlayerSDK -lBCOVWidevine -lSystem -lWViPhoneAPI -lc++ -lresolv -lxml2 -lz -framework AVFoundation -framework CoreMedia -framework MediaPlayer
+PODS_ROOT = ${SRCROOT}/Pods

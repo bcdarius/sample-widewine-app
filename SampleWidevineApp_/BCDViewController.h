@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <BCOVPlayerSDK.h>
 
-@interface BCDViewController : UIViewController
+@interface BCDViewController : UIViewController<BCOVPlaybackControllerDelegate>
+@property (nonatomic, strong) id<BCOVPlaybackController> playbackController;
+@property (nonatomic, weak) id<BCOVPlaybackSession> currentPlaybackSession;
+@property (nonatomic, strong) BCOVCatalogService *catalogService;
 
 @end
